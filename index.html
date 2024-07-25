@@ -6,208 +6,210 @@
 <link rel="preload" as="font" crossorigin="anonymous" type="font/ttf" href="https://usernamenotavailable12.github.io/Font-Repository/NotoSansAmbassadori-Bold.ttf">
 <style>
     body:has(.container .jack) {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-.container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    background: rgb(0,0,0,0);
-    padding: 0px;
-    border-radius:5px;
-    background-size: cover;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    font-family: 'Noto Sans Ambassadori';
-    font-weight: bold;
-}
-.container * {
-    box-sizing: border-box;
-}
-.container .number-box .wrapper {
-    padding: 6px 0px;
-    padding-left: 5px;
-    width: 100%;
-    text-align: right;
-}
-.container .number-slider {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.container .numbers {
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: -2px;
-    gap: 100px;
-}
-.numbers--box {
-    display: flex;
-    align-items: center;
-}
-.container .numbers__item {
-    width: 199px;
-    height: 61px;
-    display: flex;
-    color: #ffffff;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.numbers__item.numbers__item--yvavi {background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/9f40995d-80e8-4e85-921b-886789d71dae/Progressive.png?auto=format%2Ccompress"); margin-right: 10px;}
-
-.container .numbers__item .numbers__item--icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.container .number__item--img {
-    width: 90px;
-}
-.container .numbers__item-wrap {
-    padding: 0 14px 0 14px;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-}
-.jack::after {
-  content: ' ₾';
-  font-size: 12px;
-}
-
-.container .number-box {
-    overflow: hidden;
-    display: block;
-    margin-top: 19px;
-    font-size: 22px;
-    line-height: 28px;
-}
-.container .number-box .jack {
-    height: 29px;
-    overflow: hidden;
-    display: inline-block;
-    position: relative;
-}
-.jack>div {
-    display: inline-block;
-    margin-top: -56px;
-    font-size: 19px;
-}
-.jack>div>span {
-    display: block;
-    font-family: 'Noto Sans Ambassadori';
-    font-weight: bold;
-}
-.jack>div>span.dot {
-    visibility: hidden;
-    opacity: 0;
-}
-.jack>div.go {
-    -ms-transform: translateY(-28px);
-    transform: translateY(-28px);
-}
-.jackpot-logo-amb-mob {
-    display: none;
-}
-.jackpot-logo-amb-desk {
-    display: block;
-}
-.jackpot-logo-amb-desk:is(img) {
-  padding-left: 62px;
-  padding-right: 62px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-@media (max-width: 1200px) {
-    .container .numbers {
-        flex-direction: column;
-        gap: 10px;
-        background-image: url('https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/579a8832-4b5b-4369-ac37-85b3b59fc994/abstract-gold-art-deco-pattern-black_38782-1150.jpg?auto=format%2Ccompress');
-        border-radius: 5px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .container .number-box {
-    margin-top: 15px;
-}
-    .container .numbers__item {
-    width: 165px;
-    height: 53px;
+        margin: 0 !important;
+        padding: 0 !important;
     }
     .container {
-      margin-left: 10px !important;
-      margin-right: 10px !important;
-      padding: 0px;
-      border: solid 1px rgb(207, 22, 125, 0.4);
-      padding-top: 2px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        background: rgb(0,0,0,0);
+        padding: 0px;
+        border-radius:5px;
+        background-size: cover;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        font-family: 'Noto Sans Ambassadori';
+        font-weight: bold;
     }
-    .jack>div {
-    font-size: 16px;
-}
-.jackpot-logo-amb-desk {
-    display: none;
-}
-.jackpot-logo-amb-mob {
-    display: none;
-}
-.container .numbers__item-wrap {
-    padding: 0px 14px 0 14px;
-}
-}
-@media (min-width: 1200px) and (max-width: 1400px) {
+    .container * {
+        box-sizing: border-box;
+    }
+    .container .number-box .wrapper {
+        padding: 6px 0px;
+        padding-left: 5px;
+        width: 100%;
+        text-align: right;
+    }
+    .container .number-slider {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: center;
+        align-items: center;
+    }
     .container .numbers {
-        flex-direction: row;
-        gap: 80px;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: -2px;
+        gap: 100px;
+    }
+    .numbers--box {
+        display: flex;
+        align-items: center;
     }
     .container .numbers__item {
-    width: 189px;
-    height: 51px;
+        width: 199px;
+        height: 61px;
+        display: flex;
+        color: #ffffff;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .numbers__item.numbers__item--yvavi {
+        background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/9f40995d-80e8-4e85-921b-886789d71dae/Progressive.png?auto=format%2Ccompress"); 
+        margin-right: 10px;
+    }
+    .container .numbers__item .numbers__item--icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .number__item--img {
+        width: 90px;
+    }
+    .container .numbers__item-wrap {
+        padding: 0 14px 0 14px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+    }
+    .jack::after {
+        content: ' ₾';
+        font-size: 12px;
+    }
+    .container .number-box {
+        overflow: hidden;
+        display: block;
+        margin-top: 19px;
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .container .number-box .jack {
+        height: 29px;
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
     }
     .jack>div {
-    font-size: 14px;
-}
-}
-@font-face{
-  font-family: 'Noto Sans Ambassadori';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://usernamenotavailable12.github.io/Font-Repository/NotoSansAmbassadori-Bold.ttf);
-}@font-face{
-  font-family: 'Noto Sans Ambassadori';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://usernamenotavailable12.github.io/Font-Repository/NotoSansAmbassadori-Bold.ttf);
-}
+        display: inline-block;
+        margin-top: -56px;
+        font-size: 19px;
+    }
+    .jack>div>span {
+        display: block;
+        font-family: 'Noto Sans Ambassadori';
+        font-weight: bold;
+    }
+    .jack>div>span.dot {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .jack>div.go {
+        -ms-transform: translateY(-28px);
+        transform: translateY(-28px);
+    }
+    .jackpot-logo-amb-mob {
+        display: none;
+    }
+    .jackpot-logo-amb-desk {
+        display: block;
+    }
+    .jackpot-logo-amb-desk:is(img) {
+        padding-left: 62px;
+        padding-right: 62px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    @media (max-width: 1200px) {
+        .container .numbers {
+            flex-direction: column;
+            gap: 10px;
+            background-image: url('https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/579a8832-4b5b-4369-ac37-85b3b59fc994/abstract-gold-art-deco-pattern-black_38782-1150.jpg?auto=format%2Ccompress');
+            border-radius: 5px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .container .number-box {
+            margin-top: 15px;
+        }
+        .container .numbers__item {
+            width: 165px;
+            height: 53px;
+        }
+        .container {
+            margin-left: 10px !important;
+            margin-right: 10px !important;
+            padding: 0px;
+            border: solid 1px rgb(207, 22, 125, 0.4);
+            padding-top: 2px;
+        }
+        .jack>div {
+            font-size: 16px;
+        }
+        .jackpot-logo-amb-desk {
+            display: none;
+        }
+        .jackpot-logo-amb-mob {
+            display: none;
+        }
+        .container .numbers__item-wrap {
+            padding: 0px 14px 0 14px;
+        }
+    }
+    @media (min-width: 1200px) and (max-width: 1400px) {
+        .container .numbers {
+            flex-direction: row;
+            gap: 80px;
+        }
+        .container .numbers__item {
+            width: 189px;
+            height: 51px;
+        }
+        .jack>div {
+            font-size: 14px;
+        }
+    }
+    @font-face {
+        font-family: 'Noto Sans Ambassadori';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://usernamenotavailable12.github.io/Font-Repository/NotoSansAmbassadori-Bold.ttf);
+    }
+    @font-face {
+        font-family: 'Noto Sans Ambassadori';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://usernamenotavailable12.github.io/Font-Repository/NotoSansAmbassadori-Bold.ttf);
+    }
 </style>
-    <div class="container">
-        <div class="numbers">
-            <div class="numbers--box">
-                <div class="numbers__item numbers__item--yvavi">
-                    <div class="numbers__item-wrap">
-                        <div class="number-box">
-                            <div id="wrapp0" class="jack"></div>
-                        </div>
+<div class="container">
+    <div class="numbers">
+        <div class="numbers--box">
+            <div class="numbers__item numbers__item--yvavi">
+                <div class="numbers__item-wrap">
+                    <div class="number-box">
+                        <div id="wrapp0" class="jack"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
+</div>
+<script>
 const TIME_INTERVAL = 10;
 const JSON_URI = 'https://ambassadoribetge-api-prod-bgsp.egt-ong.com/api/jackpot/stats';
 let intervals = [];
@@ -260,7 +262,7 @@ function syncJackpots() {
             const updateInterval = TIME_INTERVAL * 1000 / diffs[index]; // Calculate update interval based on difference
             intervals.push(
                 setInterval(() => {
-                    iterateAndUpdateJackpot(previousJackpots, index, wrap, domArr);
+                    // Removed iterateAndUpdateJackpot function call
                 }, updateInterval)
             );
         });
@@ -300,5 +302,5 @@ function createInitialDomElements(wrap, domArr, jackpot, index) {
         }
     });
 }
-    </script>
+</script>
 </html>
