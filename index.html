@@ -42,7 +42,6 @@
     }
     .container .numbers {
         display: flex;
-        -ms-flex-align: center;
         align-items: center;
         justify-content: center;
         width: 100%;
@@ -52,10 +51,14 @@
     .numbers--box {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
     .container .numbers__item {
-        width: 199px;
-        height: 61px;
+        width: 169px;
+        height: 51px;
         display: flex;
         color: #ffffff;
         background-size: 100%;
@@ -63,8 +66,30 @@
         background-position: center;
     }
     .numbers__item.numbers__item--yvavi {
-        background-image: url("https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/9f40995d-80e8-4e85-921b-886789d71dae/Progressive.png?auto=format%2Ccompress"); 
+        background: linear-gradient(green,rgb(0, 58, 0),rgb(0, 26, 0));
         margin-right: 10px;
+        border-radius: 5px;
+        border: solid 2px #cf167c62;
+    }
+    .numbers__item.numbers__item--yvavi:nth-child(2) {
+        background: linear-gradient(rgb(128, 0, 0),rgb(58, 0, 0),rgb(26, 0, 0));
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+    .numbers__item.numbers__item--yvavi:nth-child(3) {
+        background: linear-gradient(rgb(109, 128, 0),rgb(52, 58, 0),rgb(24, 26, 0));
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+    .numbers__item.numbers__item--yvavi:nth-child(4) {
+        background: linear-gradient(rgb(128, 73, 0),rgb(58, 33, 0),rgb(26, 14, 0));
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+    .numbers__item.numbers__item--yvavi:nth-child(5) {
+        background: linear-gradient(rgb(77, 0, 128),rgb(30, 0, 58),rgb(12, 0, 26));
+        margin-right: 10px;
+        border-radius: 5px;
     }
     .container .numbers__item .numbers__item--icon {
         display: flex;
@@ -82,27 +107,26 @@
         align-items: center;
         font-size: 12px;
     }
-    .jack::after {
-        content: ' ₾';
-        font-size: 12px;
-    }
     .container .number-box {
         overflow: hidden;
         display: block;
-        margin-top: 19px;
+        margin-top: 0px;
         font-size: 22px;
         line-height: 28px;
+        width: auto;
+        margin-right: -20px;
     }
     .container .number-box .jack {
         height: 29px;
         overflow: hidden;
         display: inline-block;
         position: relative;
+        width: 7rem;
     }
     .jack>div {
         display: inline-block;
-        margin-top: -56px;
-        font-size: 19px;
+        margin-top: -86px;
+        font-size: 15px;
     }
     .jack>div>span {
         display: block;
@@ -114,7 +138,6 @@
         opacity: 0;
     }
     .jack>div.go {
-        -ms-transform: translateY(-28px);
         transform: translateY(-28px);
     }
     .jackpot-logo-amb-mob {
@@ -129,11 +152,39 @@
         padding-top: 2px;
         padding-bottom: 2px;
     }
+    .container .numbers__item-wrap h8 {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      padding-right: 7px;
+      color: rgb(228, 228, 228);
+    }
+    .container .numbers__item-wrap {
+      background: linear-gradient(120deg,rgb(0, 0, 0), transparent 60%);
+    }
+    .jack::after {
+      content: '₾';
+      font-size: 9px;
+      padding-left: 3px;
+    }
+    .progeressive-jackpot-logo-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+      }
     @media (max-width: 1200px) {
+      .container .numbers__item-wrap h8 {
+        width: 50%;
+        white-space: pre-wrap !important;
+      }
+      .progeressive-jackpot-logo-desktop {
+        display: none;
+      }
         .container .numbers {
             flex-direction: column;
             gap: 10px;
-            background-image: url('https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/579a8832-4b5b-4369-ac37-85b3b59fc994/abstract-gold-art-deco-pattern-black_38782-1150.jpg?auto=format%2Ccompress');
+            background: radial-gradient(rgb(58, 0, 32),black);
             border-radius: 5px;
             background-size: cover;
             background-position: center;
@@ -142,11 +193,12 @@
             padding-bottom: 10px;
         }
         .container .number-box {
-            margin-top: 15px;
+            margin-top: 0px;
+            margin-right: -70px;
         }
         .container .numbers__item {
-            width: 165px;
-            height: 53px;
+            width: 145px;
+            height: 43px;
         }
         .container {
             margin-left: 10px !important;
@@ -156,7 +208,10 @@
             padding-top: 2px;
         }
         .jack>div {
-            font-size: 16px;
+            font-size: 10px;
+        }
+        .container .numbers__item-wrap h8 {
+          font-size: 10px;
         }
         .jackpot-logo-amb-desk {
             display: none;
@@ -165,7 +220,7 @@
             display: none;
         }
         .container .numbers__item-wrap {
-            padding: 0px 14px 0 14px;
+            padding: 0px 0px 0 0px;
         }
     }
     @media (min-width: 1200px) and (max-width: 1400px) {
@@ -196,13 +251,49 @@
         src: url(https://usernamenotavailable12.github.io/Font-Repository/NotoSansAmbassadori-Bold.ttf);
     }
 </style>
+<div class="progeressive-jackpot-logo-desktop">
+<img width="100px" src="https://images.takeshape.io/5da2b4d5-59f6-412a-82c3-f6a272b532be/dev/f8a10956-c06e-4e8c-9a40-590c9ffc46fe/progressive_badge.png?auto=format%2Ccompress">
+</div>
 <div class="container">
     <div class="numbers">
         <div class="numbers--box">
             <div class="numbers__item numbers__item--yvavi">
                 <div class="numbers__item-wrap">
+                    <h8>Versailles Gold</h8>
                     <div class="number-box">
-                        <div id="wrapp0" class="jack"></div>
+                        <div id="wrapp_Versailles_Gold" class="jack"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="numbers__item numbers__item--yvavi">
+                <div class="numbers__item-wrap">
+                    <h8>Burning Hot</h8>
+                    <div class="number-box">
+                        <div id="wrapp_Burning_Hot" class="jack"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="numbers__item numbers__item--yvavi">
+                <div class="numbers__item-wrap">
+                    <h8>Rise of Ra</h8>
+                    <div class="number-box">
+                        <div id="wrapp_Rise_of_Ra" class="jack"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="numbers__item numbers__item--yvavi">
+                <div class="numbers__item-wrap">
+                    <h8>40 Super Hot</h8>
+                    <div class="number-box">
+                        <div id="wrapp_40_Super_Hot" class="jack"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="numbers__item numbers__item--yvavi">
+                <div class="numbers__item-wrap">
+                    <h8>20 Super Hot</h8>
+                    <div class="number-box">
+                        <div id="wrapp_20_Super_Hot" class="jack"></div>
                     </div>
                 </div>
             </div>
@@ -213,13 +304,19 @@
 const TIME_INTERVAL = 10;
 const JSON_URI = 'https://ambassadoribetge-api-prod-bgsp.egt-ong.com/api/jackpot/stats';
 let intervals = [];
-let previousJackpots = [];
+let previousJackpots = {
+    "Versailles Gold": 0,
+    "Burning Hot": 0,
+    "Rise of Ra": 0,
+    "40 Super Hot": 0,
+    "20 Super Hot": 0
+};
 
 syncJackpots();
 
 setInterval(() => {
     syncJackpots();
-}, TIME_INTERVAL * 100);
+}, TIME_INTERVAL * 1000);
 
 function syncJackpots() {
     fetch(JSON_URI, { cache: 'no-cache' })
@@ -230,41 +327,37 @@ function syncJackpots() {
         intervals.forEach(interval => clearInterval(interval));
         intervals = [];
 
-        const instance = data.jackpotInstancesStats.instanceStats.find(stat => stat.instanceName === "Burning Hot");
-        console.log('Instance found:', instance);
-        const levelStats = instance.levelStats;
+        const instances = data.jackpotInstancesStats.instanceStats;
+        const currentJackpots = {};
+        const wrap = {};
+        const domArr = {};
 
-        if (previousJackpots.length === 0) {
-            previousJackpots = [
-                getCurrentValue(levelStats, 1) // Updated levelId to 1
-            ];
-        } else {
-            // Update previousJackpots with the latest data
-            previousJackpots[0] = getCurrentValue(levelStats, 1); // Updated levelId to 1
-        }
+        instances.forEach(instance => {
+            const instanceName = instance.instanceName;
+            const levelStats = instance.levelStats;
 
-        console.log('Previous jackpots:', previousJackpots);
+            if (!previousJackpots.hasOwnProperty(instanceName)) return;
 
-        const currentJackpots = [
-            getCurrentValue(levelStats, 1) // Updated levelId to 1
-        ];
+            previousJackpots[instanceName] = getCurrentValue(levelStats, 1) || previousJackpots[instanceName];
+            currentJackpots[instanceName] = getCurrentValue(levelStats, 1) || previousJackpots[instanceName];
 
-        console.log('Current jackpots:', currentJackpots);
-        
-        const diffs = currentJackpots.map((jackpot, index) => jackpot - previousJackpots[index]);
+            // Create or update DOM elements
+            wrap[instanceName] = document.getElementById('wrapp_' + instanceName.replace(/\s+/g, '_'));
+            if (wrap[instanceName]) {
+                wrap[instanceName].innerHTML = '';
+                domArr[instanceName] = [];
 
-        const wrap = [];
-        const domArr = [];
+                createInitialDomElements(wrap, domArr, currentJackpots[instanceName], instanceName);
 
-        previousJackpots.forEach((jackpot, index) => {
-            createInitialDomElements(wrap, domArr, jackpot, index);
-
-            const updateInterval = TIME_INTERVAL * 1000 / diffs[index]; // Calculate update interval based on difference
-            intervals.push(
-                setInterval(() => {
-                    // Removed iterateAndUpdateJackpot function call
-                }, updateInterval)
-            );
+                const diffs = Object.keys(currentJackpots).map(name => currentJackpots[name] - previousJackpots[name]);
+                const updateInterval = TIME_INTERVAL * 1000 / Math.max(...diffs);
+                intervals.push(
+                    setInterval(() => {
+                        // Update the jackpot values periodically
+                        // Ensure you are updating the DOM elements as needed
+                    }, updateInterval)
+                );
+            }
         });
     });
 }
@@ -273,34 +366,30 @@ function getCurrentValue(levelStats, levelId) {
     const level = levelStats.find(stat => stat.levelId === levelId);
     console.log('Level found:', level);
     if (level) {
-        return parseInt(level.currentValue.find(value => value.key === 'GEL').value); // Adjusted to fetch correct value
+        return parseInt(level.currentValue.find(value => value.key === 'GEL').value);
     } else {
         return 0;
     }
 }
 
-function createInitialDomElements(wrap, domArr, jackpot, index) {
-    wrap[index] = document.getElementById('wrapp' + index);
-    wrap[index].innerHTML = '';
-    domArr[index] = [];
-
-    jackpot.toString().split('').forEach((number, numIndex) => {
+function createInitialDomElements(wrap, domArr, jackpot, instanceName) {
+    const formattedJackpot = jackpot.toString().split('');
+    formattedJackpot.forEach((number, numIndex) => {
         const numDom = document.createElement('div');
         numDom.innerHTML = parseInt(number);
-        wrap[index].appendChild(numDom);
-        domArr[index].push(numDom);
-    
-        if (((jackpot.toString().length - 3) - numIndex) % 3 == 0) {
+        wrap[instanceName].appendChild(numDom);
+        domArr[instanceName].push(numDom);
+
+        if (((formattedJackpot.length - 3) - numIndex) % 3 === 0) {
             const numDomSeparator = document.createElement('div');
-            const separator = jackpot.toString().length - 3 == numIndex ? '.' : ',';
+            const separator = formattedJackpot.length - 3 === numIndex ? '.' : ',';
             for (let i = 0; i < 3; i++) {
                 const a = document.createElement('div');
                 a.innerHTML = separator;
                 numDomSeparator.appendChild(a);
             }
-            wrap[index].appendChild(numDomSeparator);
+            wrap[instanceName].appendChild(numDomSeparator);
         }
     });
 }
 </script>
-</html>
