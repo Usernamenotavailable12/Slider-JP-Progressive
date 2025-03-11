@@ -325,7 +325,7 @@ function syncJackpots() {
     fetch(JSON_URI, { cache: 'no-cache' })
     .then(res => res.json())
     .then(data => {
-        console.log('Data fetched:', data);
+
 
         intervals.forEach(interval => clearInterval(interval));
         intervals = [];
@@ -367,7 +367,6 @@ function syncJackpots() {
 
 function getCurrentValue(levelStats, levelId) {
     const level = levelStats.find(stat => stat.levelId === levelId);
-    console.log('Level found:', level);
     if (level) {
         return parseInt(level.currentValue.find(value => value.key === 'GEL').value);
     } else {
